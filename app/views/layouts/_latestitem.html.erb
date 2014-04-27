@@ -1,0 +1,19 @@
+<% @latestitem.each do |item| %>
+
+<div class="panel panel-default">
+
+	<div class="panel-heading showbox right_heading">
+		Latest Item: <span class="pricecolor"><%= link_to item.product, item %>, <%= number_to_currency(item.price) %></span>
+	</div>
+
+	<div class="panel-body centered right_width">
+		<%= link_to (image_tag item.image.url), item %>
+	</div>
+
+	<div class="panel-footer right_footer">
+		<%= link_to 'View item', item %> | 
+		<%= link_to 'All items', items_path %>
+	</div>
+
+</div>
+<% end %>

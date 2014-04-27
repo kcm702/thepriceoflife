@@ -1,0 +1,21 @@
+<% @latestpost.each do |post| %>
+
+<div class="panel panel-default">
+
+	<div class="panel-heading showbox right_heading">
+		<%= link_to post.title, post %>
+	</div>
+
+	<div class="panel-body">
+    <div class="right_width">
+			<%= truncate (post.body.html_safe), length: 300, :omission => "", :escape => false %>...
+		</div>
+	</div>
+
+	<div class="panel-footer right_footer">
+		<%= link_to 'Read more', post %> | 
+		<%= link_to 'All posts', posts_path %>
+	</div>
+
+</div>
+<% end %>

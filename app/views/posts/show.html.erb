@@ -1,0 +1,28 @@
+<div class="col-xs-12 col-md-8">
+	<div class="panel panel-default">
+
+		<div class="panel-heading">
+			<h2><%= @post.title %></h2>
+		</div>
+
+		<div class="panel-body">
+			<div class="dated">
+	          <%= @post.created_at.strftime('%B %e %Y') %>
+	          <br /><br />
+	        </div>
+			<%= @post.body.html_safe %>        
+		</div>
+
+		<div class="panel-footer">
+			<% if user_signed_in? %>
+				<%= link_to 'Edit', edit_post_path(@post) %> |
+			<% end %>
+			<%= link_to 'All posts', posts_path %>
+		</div>
+
+	</div>
+</div>
+
+<div class="col-xs-12 col-md-4">
+	<%= render 'posts/right' %>
+</div>

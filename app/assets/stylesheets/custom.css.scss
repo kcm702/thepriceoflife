@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+$font-family-sans-serif:	'Roboto', sans-serif;
+$body-bg: 	#DCE9BE;
+$navbar-default-bg: #555152;
+$navbar-default-link-color: white;
+$navbar-default-link-hover-color: #EFFFCD;
+$navbar-border-radius: 0px;
+$jumbotron-bg: white;
+$state-info-bg: white;
+
+@import 'bootstrap';
+
+.pricecolor {
+	color: #99173C;
+}
+
+.navbar-brand {
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-size: x-large;
+}
+
+.centered {
+	text-align: center;
+}
+
+.righted {
+	text-align: right;
+}
+
+.bigfield {
+	height: 500px;
+}
+
+.dated {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.right_width img {
+	max-width: 95%;
+	max-height: 300px;
+}
+
+.right_heading, .right_heading a {
+	font-weight: 700;
+	color: inherit;
+}
+
+.right_footer {
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.homemainimage img {
+	width: 100%;
+}
+
+.masonryheading, .masonryheading a {
+	color: inherit;
+}
+
+.bottompadding {
+	padding-bottom: 50px;
+}
+
+.panel-body img {
+	max-width: 95%;
+}

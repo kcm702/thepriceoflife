@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product: MyString
+  description: MyString
+  price: 9.99
+  date: 2014-04-22
+
+two:
+  product: MyString
+  description: MyString
+  price: 9.99
+  date: 2014-04-22

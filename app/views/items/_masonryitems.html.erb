@@ -1,0 +1,16 @@
+<div id="items" class="transitions-enabled">
+  <% @items.each do |item| %>
+    <div class="box panel panel-default">
+      <%= link_to (image_tag item.image.url(:medium)), item %>
+      <div class="panel-body">
+        <h4>
+          <%= link_to (item.product), item, class: "masonryheading" %>, <span class="pricecolor"><%= number_to_currency(item.price) %></span>
+        </h4>
+        <% if user_signed_in? %>
+          <%= link_to 'Edit', edit_item_path(item) %> | 
+          <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
